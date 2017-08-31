@@ -1,7 +1,10 @@
     <div class="container">
         <div class="row">                                    
                 <!-- <form action="" method="post" role"form" class="form-horizontal">       -->
-            <div class="col-lg-4 offset-xl-7">
+            <div class="col-md-3 col-xs-12">
+                
+            </div>
+            <div class="col-md-6 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                             <strong>Inicia sesion</strong>
