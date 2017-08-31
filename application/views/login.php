@@ -1,16 +1,22 @@
     <div class="container">
-        <div class="row">                                    
+        <div class="row">        
+            <div class="col-md-4 col-xs-3">
+            </div>                
                 <!-- <form action="" method="post" role"form" class="form-horizontal">       -->
-            <div class="col-md-3 col-xs-12">
-                
-            </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-lg-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                             <strong>Inicia sesion</strong>
                     </div>
                         <div class="panel-body">
-                            <?= form_open("superu/ingresar")?>                                            
+                            <div class="alert alert-danger" id="no_login">
+                                <strong>¡ Usuario / Contraseña incorrectos ! </strong>Verifica los datos que ingresaste
+                            </div>
+                            <div class="alert alert-danger" id="validando">
+                                <strong> Datos sin completar</strong>
+                                <div class="lista_errores"></div>
+                            </div>
+                            <?= form_open("superu/ingresar","class=form-horizontal id=login_form role=form ")?>                                            
                                 <div class="form-group">
                                     <label for="usuario" class="text-center">Usuario</label>
                                     <input type="text" name ="user"class="form-control" placeholder="Nombre de usuario">
@@ -20,8 +26,10 @@
                                     <input type="password"  name = "pass"class="form-control" placeholder="Introduce la contraseña">
                                 </div>                
                                     <div class="form-group">
-                                        <input type="submit" value="Ingresar" class=" center-block btn btn-primary">
-                                    </div>                                                                                                                        
+                                        <button id="iniciar_sesion" class=" center-block btn btn-primary">
+                                            Ingresar
+                                        </button>
+                                    </div>                                                                                                                                                        
                             </form>
                         </div>
                     </div>

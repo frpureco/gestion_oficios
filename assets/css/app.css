@@ -1,0 +1,35 @@
+body{
+    text-align: justify;
+
+}
+
+.page-header{    
+    color: #ffffff;
+    background-color: #08101F;
+    margin-top: 0px;
+    text-align: justify;
+}
+
+#correcto{
+    display: none;
+}
+
+#validando{
+    display: none;
+}
+#no_login{
+    display: none;
+}
+.upload-button{
+    background-color:#ba2323;
+    padding:10px;
+    position:relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size:12px;
+    text-decoration:none;
+    color:#fff;
+    border: solid 1px #831212;
+    background-image: linear-gradient(bottom, rgb(171,27,27) 0%, rgb(212,51,51) 100%);
+    border-radius: 5px;
+}
+
